@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  },
+  "scripts": {
+    "dev": "docker compose -f backend/docker-compose.yml up -d redis && concurrently -k -n FRONTEND,GATEWAY,AUTH,CHAT,AGENT \"npm run dev --prefix frontend\" \"npm run dev --prefix backend/gateway\" \"npm run dev --prefix backend/services/auth\" \"npm run dev --prefix backend/services/chat\" \"npm run dev --prefix backend/services/agents\" \"npm run dev --prefix backend/services/billing\""
+  }
+}
