@@ -1,6 +1,6 @@
-# NexusAI
+# GaurivaAI
 
-NexusAI is a production-ready, AI-powered workspace built using a microservices architecture. It combines multiple specialized AI agents behind a single conversational interface, enabling users to chat, generate code, create PDFs and PowerPoint presentations, perform web search, analyze files with Retrieval-Augmented Generation (RAG), and generate images.
+GaurivaAI is a production-ready, AI-powered workspace built using a microservices architecture. It combines multiple specialized AI agents behind a single conversational interface, enabling users to chat, generate code, create PDFs and PowerPoint presentations, perform web search, analyze files with Retrieval-Augmented Generation (RAG), and generate images.
 
 The platform uses LangGraph for intelligent agent orchestration, Firebase Authentication for secure login, Redis for session management, Razorpay for billing, Qdrant as a vector database for semantic retrieval, and Amazon S3 for file storage.
 
